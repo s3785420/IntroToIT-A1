@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>My Project Idea</title>
+</head>
+
+<body>
+    <h1>Assignment 1: My Profile</h1>
+    <p><b>Menu ></b> <a href="index.html">About Me</a> | <a href="interest.html">Interest In IT </a> | <a href="ideal.html"> My Ideal IT Job</a> | <a href="profile.html">Personal Profile</a> | <em>My Project Idea</em></a><br></p>
+    <hr>
+    
+    <h1>Project Title</h1>
+   
+    <h2>Overview</h2>
+    <p>
+        A web service that allows users to track their medication use and corelate it with their mood. It would take the form of a web based cross 
+        platform app utilising a framework such as React Native. This app would be capable of acting as a medication reminder app as well as allowing 
+        the user to describe their mood in the time between doses. As well as a detailed written description the user could input their mood on a 
+        multi-point scale of user defined length. Using this data, the app will provide a visualisation of mood reports compared to medication taking. 
+    </p>
+
+    <h2>Motivation</h2>
+    <p>
+        Both I and people I know have been taking medications either for their entire life or on and off throughout their life and a common 
+        question doctors ask during consultations is how those drugs have impacted on their mood, and I can never recall in the moment. While 
+        there are apps for both medication tracking and mood tracking, they offer no straightforward way to compare data between the two (Understandably, 
+        as the apps are separate and generally made by different developers). This data could then be shown to doctors to more usefully and more 
+        accurately describe any potential mood fluctuations while on medication. 
+    </p>
+    
+    <h2>Description</h2>
+    <p>
+        The app will run on multiple platforms, ideally it will run on both major mobile platforms, iOS/iPadOS and Android, with the help of React Native as well 
+        as Windows and macOS via React Native for Windows + macOS. Later this could be expanded to a generic web platform using regular React, though this would 
+        require a significant infrastructure addition in the form of a webserver for hosting the site, and secure storage of user login information.  
+        <br><br>
+        Users will be able to enter the details of their medication, the dosage they take and the schedule on which to take it. Users would also then 
+        be able to enter when they’d like to be asked about their mood be it hourly, daily, bi-daily, weekly, fortnightly or only on specific days. The 
+        app will then notify the user, when appropriate, for them to take their medication or log their mood using their operating systems native notification 
+        system (for Windows and macOS I believe this will require the application to remain running in the background at all times, potentially at the 
+        expense of the user's battery. Mobile platforms shouldn’t have this issue as they provide more robust notification systems) 
+        <br><br>
+        When the user wants to view the data, perhaps to show to a doctor or to satisfy their own curiosity, they can open a menu in the app where they will 
+        be presented with a graph that looks something like this:
+
+        <img src=images/graph.png alt="Example Graph">
+        <br>
+        From this example graph a doctor could glean that after the initial dose, mood was notably improved, but this effect was short-lived, after the 
+        second dose mood declined over the next week. This data can be used to inform the doctor to change the strength of their patient’s medication. 
+        <br><br>
+        If a user wants to edit their inputted mood or to correct a mistake in the dosage of one of their medications, these can be modified by selecting 
+        the entry in the main section of the app. 
+        <br><br>
+        The app will not support syncing data between multiple installs of the app as this runs into the infrastructure problem mentioned above. It will 
+        however allow for the data to be backed up and imported to allow for the user switching platforms or resetting their device as well as keeping a 
+        general backup of their sensitive data should they lose their device. 
+    </p>
+    
+    <h2>Tools and Technology</h2>
+    <p>
+        The app will primarily be developed with web technologies, turned into a multi-platform app via React Native (<a href="https://reactnative.dev/">https://reactnative.dev/</a>) and React Native 
+        for Windows + macOS (<a href="https://microsoft.github.io/react-native-windows/">https://microsoft.github.io/react-native-windows/</a>). A text editor or Javascript integrated development environment (IDE) to 
+        write the actual code of the app in Javascript. No other custom software should be needed to be developed outside of the core app. A device running 
+        Apple’s macOS will be required to build the app to run on iOS/iPadOS, this can be most easily achieved by using/purchasing an Apple Mac computer 
+        though macOS can be run on other hardware using unofficial methods. Android Studio will be required to build for Android devices, this is freely 
+        available <a href="https://developer.android.com/studio">here</a> 
+    </p>
+    
+    <h2>Skills Required</h2>
+    <p>
+        The primary skill required is the ability to use the React Native platform and the associated web technologies, primarily Javascript. Facebook, 
+        the creators of React, have provided in depth documentation on the React Native platform as well as a basics guide. For further tutorials many 
+        paid and free resources are available online from sites such as <a href="https://www.edx.org">EdX</a>, <a href="https://www.udemy.com">Udemy</a> 
+        and <a href="https://www.tutorialspoint.com">TutorialsPoint</a>, among others. No special hardware is required to be created for this project. 
+    </p>
+    
+    <h2>Outcome</h2>
+    <p>
+        When this app is created and made available to others, I hope that others will use it to track their mood as it compares to their 
+        medication intake. I hope the app will be used so that doctors can provide more accurate care for their patients by allowing them a 
+        greater understanding of the changes a patient's mood may take while taking medication. 
+    </p>
+</body>
